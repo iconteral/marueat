@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Marueat</string>
+    <string name="login_native_title">登录入口</string>
+    <string name="login_username_hint">账号</string>
+    <string name="login_password_hint">密码</string>
+    <string name="login_native_action">打开登录页并登录</string>
+    <string name="login_webview_title">WebView 登录</string>
+    <string name="login_webview_notice">WebView 将打开内置 Authing 登录页。登录成功后，页面会将主 token 回传给原生层，再继续换取食堂会话。</string>
+    <string name="login_token_title">Token 导入入口</string>
+    <string name="login_token_hint">粘贴主 token</string>
+    <string name="login_token_action">导入 token 并登录</string>
+    <string name="session_title">会话状态</string>
+    <string name="session_refresh_action">刷新状态</string>
+    <string name="session_logout_action">退出登录</string>
+    <string name="qr_title">二维码区域</string>
+    <string name="qr_image_content_description">食堂二维码</string>
+    <string name="qr_zoom_hint">点击二维码可切换放大倍数，点击背景关闭</string>
+</resources>
