@@ -24,13 +24,17 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       
-      - name: Build Release APK
+      - name: Build Release APKs
         run: ./gradlew assembleRelease
+      
+      - name: List generated APKs
+        run: ls -la app/build/outputs/apk/release/
       
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          files: app/build/outputs/apk/release/*.apk
+          files: |
+            app/build/outputs/apk/release/Marueat-*.apk
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
